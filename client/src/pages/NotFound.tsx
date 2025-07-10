@@ -1,16 +1,7 @@
-import { useLocation, Link } from "wouter";
-import { useEffect } from "react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 
 const NotFound = () => {
-  const [location] = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location
-    );
-  }, [location]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-background">

@@ -19,16 +19,16 @@ const App = () => (
       <Router>
         <Route path="/" component={Index} />
         <Route path="/about" component={About} />
-        <Route path="/feed" component={() => (
+        <Route path="/feed">
           <div className="min-h-screen bg-background">
             <Navigation />
             <div className="pt-16">
               <VideoFeed />
             </div>
           </div>
-        )} />
+        </Route>
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-        <Route component={NotFound} />
+        <Route path="*" component={NotFound} />
       </Router>
     </TooltipProvider>
   </QueryClientProvider>
