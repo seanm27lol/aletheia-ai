@@ -21,8 +21,12 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
-              <Shield className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+              <img 
+                src="@assets/AleLogo_1752165763606.jpg" 
+                alt="ALE Logo" 
+                className="w-8 h-8 object-contain rounded-lg"
+              />
             </div>
             <span className="text-xl font-bold text-foreground">Aletheia</span>
             <Badge className="bg-verified text-verified-foreground text-xs">

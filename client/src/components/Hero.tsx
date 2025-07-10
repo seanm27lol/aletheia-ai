@@ -12,7 +12,11 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <Badge className="mb-6 bg-white/20 text-white border-white/30 backdrop-blur-md">
-          <Shield className="w-4 h-4 mr-2" />
+          <img 
+            src="@assets/AleLogo_1752165763606.jpg" 
+            alt="ALE Logo" 
+            className="w-4 h-4 mr-2 object-contain rounded"
+          />
           Combating Misinformation with AI
         </Badge>
         
@@ -42,7 +46,11 @@ const Hero = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
           <div className="text-center">
             <div className="flex items-center justify-center mb-2">
-              <Shield className="w-6 h-6 text-white mr-2" />
+              <img 
+                src="@assets/AleLogo_1752165763606.jpg" 
+                alt="ALE Logo" 
+                className="w-6 h-6 mr-2 object-contain rounded"
+              />
               <span className="text-3xl font-bold text-white">100%</span>
             </div>
             <p className="text-white/80">Fact-Checked Content</p>
