@@ -3,6 +3,7 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertStorySchema } from "@shared/schema";
 import { z } from "zod";
+import { deepseekService } from "./deepseek";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   // API routes for stories
@@ -49,6 +50,82 @@ export async function registerRoutes(app: Express): Promise<Server> {
       }
       console.error("Error creating story:", error);
       res.status(500).json({ message: "Failed to create story" });
+    }
+  });
+
+  // DeepSeek AI Analysis Routes
+  app.post("/api/analyze/perspectives", async (req, res) => {
+    try {
+      const { title, content } = req.body;
+      
+      if (!title || !content) {
+        return res.status(400).json({ 
+          message: "Title and content are required" 
+        });
+      }
+
+      const analysis = await deepseekService.generatePerspectives(title, content);
+      
+      if (!analysis) {
+        return res.status(503).json({ 
+          message: "AI analysis service not available. Please configure DEEPSEEK_API_KEY." 
+        });
+      }
+
+      res.json(analysis);
+    } catch (error) {
+      console.error("Error generating perspectives:", error);
+      res.status(500).json({ message: "Failed to analyze perspectives" });
+    }
+  });
+
+  app.post("/api/analyze/bias", async (req, res) => {
+    try {
+      const { content } = req.body;
+      
+      if (!content) {
+        return res.status(400).json({ 
+          message: "Content is required" 
+        });
+      }
+
+      const analysis = await deepseekService.detectBias(content);
+      
+      if (!analysis) {
+        return res.status(503).json({ 
+          message: "AI analysis service not available. Please configure DEEPSEEK_API_KEY." 
+        });
+      }
+
+      res.json(analysis);
+    } catch (error) {
+      console.error("Error detecting bias:", error);
+      res.status(500).json({ message: "Failed to analyze bias" });
+    }
+  });
+
+  app.post("/api/analyze/factcheck", async (req, res) => {
+    try {
+      const { content } = req.body;
+      
+      if (!content) {
+        return res.status(400).json({ 
+          message: "Content is required" 
+        });
+      }
+
+      const analysis = await deepseekService.factCheck(content);
+      
+      if (!analysis) {
+        return res.status(503).json({ 
+          message: "AI analysis service not available. Please configure DEEPSEEK_API_KEY." 
+        });
+      }
+
+      res.json(analysis);
+    } catch (error) {
+      console.error("Error fact-checking:", error);
+      res.status(500).json({ message: "Failed to fact-check content" });
     }
   });
 

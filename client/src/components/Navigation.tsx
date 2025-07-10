@@ -51,10 +51,12 @@ const Navigation = () => {
                 <span>Stories</span>
               </Button>
             </Link>
-            <Button variant="ghost" className="flex items-center space-x-2">
-              <TrendingUp className="w-4 h-4" />
-              <span>Trending</span>
-            </Button>
+            <Link href="/analyze">
+              <Button variant="ghost" className="flex items-center space-x-2">
+                <TrendingUp className="w-4 h-4" />
+                <span>AI Analysis</span>
+              </Button>
+            </Link>
             <Button variant="ghost" className="flex items-center space-x-2">
               <Search className="w-4 h-4" />
               <span>Search</span>

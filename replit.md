@@ -44,7 +44,8 @@ Preferred communication style: Simple, everyday language.
 - **Video Feed**: TikTok-style interface for consuming fact-checked content
 - **Multi-Perspective Views**: Left, center, and right political perspectives
 - **Verification System**: Trust indicators and source attribution
-- **Navigation**: Intuitive routing between hero, feed, and about sections
+- **AI Analysis Tools**: DeepSeek-powered content analysis, bias detection, and fact-checking
+- **Navigation**: Intuitive routing between hero, feed, about, and AI analysis sections
 
 ### User Interface Components
 - **Hero Section**: Engaging landing page with gradient backgrounds
@@ -118,3 +119,11 @@ The application is designed to be easily extensible, with clear separation betwe
 - ✓ Updated VideoFeed component to use real database data instead of mock data
 - ✓ Integrated custom ALE logo throughout the application (replacing shield icons)
 - ✓ Application now fully functional with database backend and authentic branding
+
+### January 10, 2025 - DeepSeek AI Integration Framework
+- ✓ Created comprehensive DeepSeek AI service framework
+- ✓ Added API endpoints for perspective generation, bias detection, and fact-checking
+- ✓ Built AIAnalysis component with interactive UI for content analysis
+- ✓ Added AI Analysis route (/analyze) to navigation
+- ✓ Framework ready for DEEPSEEK_API_KEY when user provides it
+- → Integration includes: automated perspective generation, bias scoring, fact verification
