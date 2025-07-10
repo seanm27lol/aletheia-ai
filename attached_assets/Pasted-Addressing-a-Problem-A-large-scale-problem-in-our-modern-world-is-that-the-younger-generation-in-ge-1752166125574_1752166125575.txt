@@ -1,0 +1,47 @@
+Addressing a Problem:
+A large-scale problem in our modern world is that the younger generation in general doesn’t read the paper or have subscriptions to news apps like CNN, FOX, NBC etc. Many rely on online social media platforms like Instagram or Tiktok for their news which come in short form content. Unlike our youth’s parents and grandparent’s generations, their brains aren’t wired or inclined to consume traditional news media like the paper or primetime news stories. This is evident in the nation’s youth’s heavy reliance on social media for news specifically during the 2024 election. But unfortunately, misinformation permeates the social media space and many young people consume content that contains false information and/or heavy biases from users that do not have verified information and/or expertise to correctly assess incoming news stories. An incorrectly informed youth creates a dangerous future, yet many media companies, although establishing their own short term social media content on social media sites, haven’t fully jumped into the short term content zone to mass produce their media. This has shown some detrimental effects to viewership of well-established media companies as their traditional viewer base, whom grew up consuming their media, gets older and the younger generation starts to become the primary consumption of news. 
+Think about the many prevalent media companies like CNN and MSNBC whose revenueand viewership has significantly decreased from prior years. From 2021 to 2023 CNN’s has lost over 400 million in revenue. In recent years CNN's prime-time audience has dropped by 47% and MSNBC's by 53%. People don’t watch the news as much as they used to and our younger generation’s content preference isn’t improving this problem. 
+
+
+Our Aletheia is an AI news app and internet extension that strives to provide truthful, concise, and educational material specifically targeting youth.
+
+General Points:
+
+Creates up to date breaking news stories in a short form content way be it for text or video for consumption. It can have attributes similar to Tiktok or Instagram where users can follow certain topics that are of particular interest to them (ex. National Security, the Israel-Palestine conflict, etc.)
+Provides the objective facts of a story along with various perspectives on a particular issue, with links to articles that illustrate the opinions/biases of each side
+AI generated bias scores of various news companies, journalists, and specific stories that users can find through inputting simple information. 
+
+Internet Extension:
+Users are able to perform an Aletheia AI scan of articles/stories they come across for a full rundown of possible biases, explanations of biases, explanation of a particular issue's background, further clarification on aspects of an article and more by asking Ale Chat Bot 
+Ability to be directed to Aletheia website from extension to provide further explanation of particular story of issue 
+
+Aletheia Media:
+AI generated articles that are reviewed by staff that strive to create the most objective, informative, and concise articles for consumption. 
+Video media either created by AI video bots or by co-founder Theodore Dematatis using edited AI script 
+
+External Media:
+Reels & Tiktok-esque videos created by various media companies (Fox, CNN, MSNBC) along with smaller social media/podcast news sources ability to post (ex. Hasan Piker, Bill O’Reily and more)
+Creators must be verified by team to post content and follow code of conduct
+User ability to subscribe, like and comment on posts
+Creators also monitored for potential disinformation and misleading information being spread and include community esque notes (Aletheia AI strives to create a just balance between diverse political perspectives and potential misleading information on our platform, one of our goals is to give light to various political news perpsectives while also staying true to our goal to stick to the facts)
+
+
+Discussion boards and debates
+
+
+Streams of revenue:
+Premium Option
+
+Free tier: Access to daily short-form updates, basic bias analysis, and limited scans.
+Premium tier ($5-10/month): Unlimited AI scans of articles, Deeper bias breakdowns, Archive of stories and summaries, Personalized news briefing (via text or video), Ad-free experience, Early access to experimental features (like AI video explainers)
+
+Affiliate Links and Partnered Subscriptions 
+Partner with reputable media sources or aggregators (ex. NYT, WSJ, The Atlantic, Axios) and offer: Discounted trial subscriptions, Links to “in-depth perspectives” that give you affiliate revenue on signups, and Per-click payments on traffic sent.
+AI-as-a-Service: B2B Licensing
+License out Bias scoring API, Article breakdown engine, and Chrome extension functionality to Educational platforms (Newsela, EverFi), University journalism departments, Journalism startups, Advocacy orgs that want to audit media narratives.
+In-App Microtransactions 
+Optional purchases like: Deep dives ($0.99), Topic bundles (e.g., “2024 Election Pack” or “Middle East Conflict Primer”), Downloadable classroom toolkits, AI video explainer generation credits
+Advertising 
+In-App advertising for non-premium members that contain ads about education, university recruitment, events/programs
+
+
