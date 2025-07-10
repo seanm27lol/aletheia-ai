@@ -141,3 +141,84 @@ All colors MUST be HSL for consistency and theming.
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  /* Custom gradients */
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  /* Custom shadows */
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-medium {
+    box-shadow: var(--shadow-medium);
+  }
+  
+  .shadow-strong {
+    box-shadow: var(--shadow-strong);
+  }
+  
+  /* Custom perspective colors */
+  .text-perspective-left {
+    color: hsl(var(--perspective-left));
+  }
+  
+  .text-perspective-center {
+    color: hsl(var(--perspective-center));
+  }
+  
+  .text-perspective-right {
+    color: hsl(var(--perspective-right));
+  }
+  
+  .border-l-perspective-left {
+    border-left-color: hsl(var(--perspective-left));
+  }
+  
+  .border-l-perspective-center {
+    border-left-color: hsl(var(--perspective-center));
+  }
+  
+  .border-l-perspective-right {
+    border-left-color: hsl(var(--perspective-right));
+  }
+  
+  .bg-perspective-left\/5 {
+    background-color: hsl(var(--perspective-left) / 0.05);
+  }
+  
+  .bg-perspective-center\/5 {
+    background-color: hsl(var(--perspective-center) / 0.05);
+  }
+  
+  .bg-perspective-right\/5 {
+    background-color: hsl(var(--perspective-right) / 0.05);
+  }
+  
+  .text-verified {
+    color: hsl(var(--verified));
+  }
+  
+  .bg-verified {
+    background-color: hsl(var(--verified));
+  }
+  
+  .text-verified-foreground {
+    color: hsl(var(--verified-foreground));
+  }
+}
