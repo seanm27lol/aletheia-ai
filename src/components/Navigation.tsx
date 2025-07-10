@@ -24,7 +24,7 @@ const Navigation = () => {
             <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center">
               <Shield className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-foreground">TruthScope</span>
+            <span className="text-xl font-bold text-foreground">Aletheia</span>
             <Badge className="bg-verified text-verified-foreground text-xs">
               Beta
             </Badge>

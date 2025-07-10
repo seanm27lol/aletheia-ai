@@ -51,7 +51,7 @@ const Index = () => {
                   Our Mission
                 </Badge>
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 text-foreground">
-                  How TruthScope Works
+                  How Aletheia Works
                 </h1>
                 <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                   AI-powered fact-checking meets Gen Z engagement to combat misinformation
@@ -98,7 +98,7 @@ const Index = () => {
                   onClick={() => setCurrentView('feed')}
                   className="group"
                 >
-                  Try TruthScope Now
+                  Try Aletheia Now
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </div>
@@ -128,7 +128,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <Badge className="mb-6 bg-accent/10 text-accent border-accent/20">
-              Why TruthScope?
+              Why Aletheia?
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
               Unbiased News for the TikTok Generation
