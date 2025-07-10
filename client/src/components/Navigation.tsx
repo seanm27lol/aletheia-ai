@@ -45,10 +45,12 @@ const Navigation = () => {
                 <span>Home</span>
               </Button>
             </Link>
-            <Button variant="ghost" className="flex items-center space-x-2">
-              <Play className="w-4 h-4" />
-              <span>Stories</span>
-            </Button>
+            <Link href="/feed">
+              <Button variant="ghost" className="flex items-center space-x-2">
+                <Play className="w-4 h-4" />
+                <span>Stories</span>
+              </Button>
+            </Link>
             <Button variant="ghost" className="flex items-center space-x-2">
               <TrendingUp className="w-4 h-4" />
               <span>Trending</span>

@@ -6,6 +6,8 @@ import { Route, Router } from "wouter";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
+import VideoFeed from "./components/VideoFeed";
+import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +19,14 @@ const App = () => (
       <Router>
         <Route path="/" component={Index} />
         <Route path="/about" component={About} />
+        <Route path="/feed" component={() => (
+          <div className="min-h-screen bg-background">
+            <Navigation />
+            <div className="pt-16">
+              <VideoFeed />
+            </div>
+          </div>
+        )} />
         {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
         <Route component={NotFound} />
       </Router>
