@@ -11,10 +11,12 @@ import {
   Shield,
   Search
 } from "lucide-react";
+import { Link, useLocation } from "wouter";
 import aleLogo from "@assets/AleLogo_1752165763606.jpg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [location] = useLocation();
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-border shadow-soft">
@@ -37,10 +39,12 @@ const Navigation = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-6">
-            <Button variant="ghost" className="flex items-center space-x-2">
-              <Home className="w-4 h-4" />
-              <span>Home</span>
-            </Button>
+            <Link href="/">
+              <Button variant="ghost" className="flex items-center space-x-2">
+                <Home className="w-4 h-4" />
+                <span>Home</span>
+              </Button>
+            </Link>
             <Button variant="ghost" className="flex items-center space-x-2">
               <Play className="w-4 h-4" />
               <span>Stories</span>
@@ -57,9 +61,11 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline">
-              How It Works
-            </Button>
+            <Link href="/about">
+              <Button variant="outline">
+                How It Works
+              </Button>
+            </Link>
             <Button variant="hero">
               Get Started
             </Button>
