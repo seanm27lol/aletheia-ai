@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -13,65 +14,75 @@ import {
   Clock,
   MoreHorizontal
 } from "lucide-react";
+import type { Story } from "@shared/schema";
 
-interface Story {
-  id: string;
-  title: string;
-  summary: string;
-  duration: string;
-  views: string;
-  topic: string;
+interface StoryWithPerspectives extends Omit<Story, 'perspectiveLeft' | 'perspectiveCenter' | 'perspectiveRight'> {
   perspectives: {
     left: string;
     center: string;
     right: string;
   };
-  sources: string[];
-  verified: boolean;
-  thumbnail: string;
 }
-
-const mockStories: Story[] = [
-  {
-    id: "1",
-    title: "Climate Summit 2024: Key Agreements Reached",
-    summary: "World leaders agree on new carbon reduction targets, but implementation details spark debate across political spectrum.",
-    duration: "2:34",
-    views: "1.2M",
-    topic: "Environment",
-    perspectives: {
-      left: "Agreements don't go far enough - urgent action needed",
-      center: "Balanced approach considering economic impacts",
-      right: "Concerns about economic costs and feasibility"
-    },
-    sources: ["Reuters", "BBC", "AP News"],
-    verified: true,
-    thumbnail: "https://images.unsplash.com/photo-1569163139394-de4e4f43e4e3?w=400&h=600&fit=crop"
-  },
-  {
-    id: "2", 
-    title: "New Healthcare Policy Debate",
-    summary: "Proposed healthcare reforms face mixed reactions as lawmakers weigh coverage expansion against budget concerns.",
-    duration: "3:12",
-    views: "890K",
-    topic: "Healthcare",
-    perspectives: {
-      left: "Essential for expanding access to underserved communities",
-      center: "Support reform but need sustainable funding mechanisms",
-      right: "Prefer market-based solutions over government expansion"
-    },
-    sources: ["CNN", "Fox News", "NPR"],
-    verified: true,
-    thumbnail: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=600&fit=crop"
-  }
-];
 
 const VideoFeed = () => {
   const [currentStory, setCurrentStory] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [showPerspectives, setShowPerspectives] = useState<string | null>(null);
+  const [showPerspectives, setShowPerspectives] = useState<number | null>(null);
 
-  const story = mockStories[currentStory];
+  const { data: stories = [], isLoading, error } = useQuery({
+    queryKey: ['/api/stories'],
+    queryFn: async (): Promise<Story[]> => {
+      const response = await fetch('/api/stories');
+      if (!response.ok) {
+        throw new Error('Failed to fetch stories');
+      }
+      return response.json();
+    }
+  });
+
+  // Transform database stories to match component interface
+  const transformedStories: StoryWithPerspectives[] = stories.map(story => ({
+    ...story,
+    perspectives: {
+      left: story.perspectiveLeft,
+      center: story.perspectiveCenter,
+      right: story.perspectiveRight
+    }
+  }));
+
+  if (isLoading) {
+    return (
+      <section className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-muted-foreground">Loading stories...</p>
+        </div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-destructive mb-4">Failed to load stories</p>
+          <Button onClick={() => window.location.reload()}>Try Again</Button>
+        </div>
+      </section>
+    );
+  }
+
+  if (transformedStories.length === 0) {
+    return (
+      <section className="min-h-screen bg-background flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-muted-foreground">No stories available</p>
+        </div>
+      </section>
+    );
+  }
+
+  const story = transformedStories[currentStory];
 
   return (
     <section className="min-h-screen bg-background">
