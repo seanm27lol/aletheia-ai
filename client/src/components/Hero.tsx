@@ -16,7 +16,7 @@ const Hero = () => {
           <img 
             src={aleLogo} 
             alt="ALE Logo" 
-            className="w-4 h-4 mr-2 object-contain rounded"
+            className="w-6 h-6 mr-2 object-contain rounded"
           />
           Combating Misinformation with AI
         </Badge>
@@ -50,7 +50,7 @@ const Hero = () => {
               <img 
                 src={aleLogo} 
                 alt="ALE Logo" 
-                className="w-6 h-6 mr-2 object-contain rounded"
+                className="w-8 h-8 mr-2 object-contain rounded"
               />
               <span className="text-3xl font-bold text-white">100%</span>
             </div>

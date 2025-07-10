@@ -22,11 +22,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-3">
-            <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center">
               <img 
                 src={aleLogo} 
                 alt="ALE Logo" 
-                className="w-8 h-8 object-contain rounded-lg"
+                className="w-10 h-10 object-contain rounded-lg"
               />
             </div>
             <span className="text-xl font-bold text-foreground">Aletheia</span>
