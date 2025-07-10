@@ -11,6 +11,7 @@ import {
   Shield,
   Search
 } from "lucide-react";
+import aleLogo from "@assets/AleLogo_1752165763606.jpg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,7 +24,7 @@ const Navigation = () => {
           <div className="flex items-center space-x-3">
             <div className="w-8 h-8 rounded-lg flex items-center justify-center">
               <img 
-                src="@assets/AleLogo_1752165763606.jpg" 
+                src={aleLogo} 
                 alt="ALE Logo" 
                 className="w-8 h-8 object-contain rounded-lg"
               />

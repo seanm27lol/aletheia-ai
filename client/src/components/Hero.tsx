@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Shield, Users, TrendingUp } from "lucide-react";
+import aleLogo from "@assets/AleLogo_1752165763606.jpg";
 
 const Hero = () => {
   return (
@@ -13,7 +14,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <Badge className="mb-6 bg-white/20 text-white border-white/30 backdrop-blur-md">
           <img 
-            src="@assets/AleLogo_1752165763606.jpg" 
+            src={aleLogo} 
             alt="ALE Logo" 
             className="w-4 h-4 mr-2 object-contain rounded"
           />
@@ -47,7 +48,7 @@ const Hero = () => {
           <div className="text-center">
             <div className="flex items-center justify-center mb-2">
               <img 
-                src="@assets/AleLogo_1752165763606.jpg" 
+                src={aleLogo} 
                 alt="ALE Logo" 
                 className="w-6 h-6 mr-2 object-contain rounded"
               />
