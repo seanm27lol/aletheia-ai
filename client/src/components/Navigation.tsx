@@ -12,7 +12,7 @@ import {
   Search
 } from "lucide-react";
 import { Link, useLocation } from "wouter";
-import aleLogo from "@assets/AleLogo_1752165763606.jpg";
+import aleLogo from "@assets/SingleA_1753125115748.jpeg";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,11 +27,11 @@ const Navigation = () => {
             <div className="w-10 h-10 rounded-lg flex items-center justify-center">
               <img 
                 src={aleLogo} 
-                alt="ALE Logo" 
+                alt="Aletheia AI Logo" 
                 className="w-10 h-10 object-contain rounded-lg"
               />
             </div>
-            <span className="text-xl font-bold text-foreground">Aletheia</span>
+            <span className="text-xl font-bold text-foreground">Aletheia AI</span>
             <Badge className="bg-verified text-verified-foreground text-xs">
               Beta
             </Badge>

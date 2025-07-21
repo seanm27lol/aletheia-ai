@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Play, Shield, Users, TrendingUp } from "lucide-react";
-import aleLogo from "@assets/AleLogo_1752165763606.jpg";
+import aleLogo from "@assets/SingleA_1753125115748.jpeg";
 
 const Hero = () => {
   return (
@@ -15,16 +15,17 @@ const Hero = () => {
         <Badge className="mb-6 bg-white/20 text-white border-white/30 backdrop-blur-md">
           <img 
             src={aleLogo} 
-            alt="ALE Logo" 
+            alt="Aletheia AI Logo" 
             className="w-6 h-6 mr-2 object-contain rounded"
           />
-          Combating Misinformation with AI
+          Aletheia AI - Combating Misinformation with AI
         </Badge>
         
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-          Truth in the Age of
+          Aletheia AI
+          <br />
           <span className="bg-gradient-to-r from-white to-accent-soft bg-clip-text text-transparent">
-            {" "}Viral Content
+            Truth in the Age of Viral Content
           </span>
         </h1>
         
@@ -49,7 +50,7 @@ const Hero = () => {
             <div className="flex items-center justify-center mb-2">
               <img 
                 src={aleLogo} 
-                alt="ALE Logo" 
+                alt="Aletheia AI Logo" 
                 className="w-8 h-8 mr-2 object-contain rounded"
               />
               <span className="text-3xl font-bold text-white">100%</span>

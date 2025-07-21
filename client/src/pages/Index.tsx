@@ -51,7 +51,7 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <Badge className="mb-6 bg-accent/10 text-accent border-accent/20">
-              Why Aletheia?
+              Why Aletheia AI?
             </Badge>
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-foreground">
               Unbiased News for the TikTok Generation

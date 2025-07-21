@@ -1,8 +1,8 @@
-# Aletheia - Truth in the Age of Viral Content
+# Aletheia AI - Truth in the Age of Viral Content
 
 ## Overview
 
-Aletheia is a modern web application designed to combat misinformation by providing unbiased, fact-based summaries of current events in engaging short-form videos. The platform presents multiple perspectives on news stories to help users make informed decisions.
+Aletheia AI is a modern web application designed to combat misinformation by providing unbiased, fact-based summaries of current events in engaging short-form videos. The platform uses advanced AI analysis to present multiple perspectives on news stories and help users make informed decisions.
 
 ## User Preferences
 
