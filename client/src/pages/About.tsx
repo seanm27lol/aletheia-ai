@@ -226,7 +226,7 @@ const About = () => {
                       <MessageCircle className="w-6 h-6 text-orange-600 dark:text-orange-400" />
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold mb-2">Discussion Boards</h3>
+                      <h3 className="text-lg font-semibold mb-2">The Forum</h3>
                       <p className="text-muted-foreground text-sm mb-3">
                         Structured debates and discussions with community moderation.
                       </p>

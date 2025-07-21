@@ -127,3 +127,10 @@ The application is designed to be easily extensible, with clear separation betwe
 - ✓ Added AI Analysis route (/analyze) to navigation
 - ✓ Framework ready for DEEPSEEK_API_KEY when user provides it
 - → Integration includes: automated perspective generation, bias scoring, fact verification
+
+### January 21, 2025 - Branding and UI Updates
+- ✓ Updated branding from "Aletheia" to "Aletheia AI" across all components
+- ✓ Replaced logo with new SingleA image throughout the application
+- ✓ Changed discussion section naming to "the forum" per user request
+- ✓ Added comprehensive sample data to in-memory storage for testing
+- ✓ Fixed database connection issues by switching to in-memory storage temporarily

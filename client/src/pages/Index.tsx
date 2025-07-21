@@ -89,7 +89,7 @@ const Index = () => {
             
             <Card className="p-6 hover:shadow-medium transition-all duration-300 animate-fade-in" style={{ animationDelay: '0.3s' }}>
               <TrendingUp className="w-10 h-10 text-warning mb-4" />
-              <h3 className="text-lg font-semibold mb-2">Discussion & Debate</h3>
+              <h3 className="text-lg font-semibold mb-2">The Forum</h3>
               <p className="text-muted-foreground text-sm">
                 Engage in structured discussions while maintaining factual accuracy and civility
               </p>
