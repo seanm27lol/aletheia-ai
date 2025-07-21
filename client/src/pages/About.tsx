@@ -230,9 +230,15 @@ const About = () => {
                       <p className="text-muted-foreground text-sm mb-3">
                         Structured debates and discussions with community moderation.
                       </p>
-                      <p className="text-muted-foreground text-sm">
+                      <p className="text-muted-foreground text-sm mb-3">
                         Balanced approach between diverse perspectives and factual accuracy.
                       </p>
+                      <blockquote className="border-l-4 border-orange-300 pl-4 py-2 bg-orange-50/50 dark:bg-orange-800/10 rounded-r-md">
+                        <p className="text-sm italic text-muted-foreground mb-1">
+                          "The Forum trains the orator more than the school. It is there he learns the force of truth and the weight of silence."
+                        </p>
+                        <cite className="text-xs text-muted-foreground/80">— Quintilian</cite>
+                      </blockquote>
                     </div>
                   </div>
                 </Card>
